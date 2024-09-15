@@ -3,8 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <title>My-Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .image{
+            position: relative;
+            height: 490px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: pink;
+            padding: 3px;
+            margin-bottom: 10px;
+
+        }
+        .start{
+            background: linear-gradient(to bottom, #C3C7F3, #C8A8E9,#E3AADD,#F5BCBA,#F3DCDC,#F4E7FB);
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 70vh;
+            justify-content: center;
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 2px 3px 4px #B33771;
+
+        }
+        .image .profile-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .profile-card .text-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text-data .name01{
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .text-data .name02{
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .text-data .name{
+            font-size: 40px;
+            font-weight: bolder;
+            color: #82589F;
+            margin-bottom: 5px;
+
+        }
+        .media-buttons .link{
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        .button {
+
+            background-color:#D6A2E8; /* Blue background */
+            border: none;              /* No border */
+            color: #6D214F;              /* White text */
+            padding: 12px 24px;        /* Padding inside the button */
+            text-align: center;        /* Center text */
+            text-decoration: none;     /* Remove underline */
+            display: inline-block;     /* Inline-block element */
+            font-size: 16px;           /* Font size */
+            margin: 20px 2px;          /* Margin around the button */
+            cursor: pointer;           /* Pointer cursor on hover */
+            border-radius: 5px;        /* Rounded corners */
+        }
+
+        .button:hover {
+            background-color: #6D214F; /* Darker blue on hover */
+            color: #D6A2E8;
+        }
+
+        /* Basic navbar styling */
+        /* Basic navbar styling */
+        .navbar {
+            display: flex;
+            position: fixed;
+            background: linear-gradient(to bottom, #C3C7F3, #C8A8E9,#E3AADD);
+            padding: 10px;
+            width: 900px;            /* Fixed width */
+            margin: 10px 500px;         /* Center horizontally */
+            text-align: center;     /* Center align text within navbar */
+        }
+
+        .nav-links {
+            list-style: none;       /* Remove bullets */
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline-block; /* Display links inline */
+            margin: 0 15px;        /* Spacing between each link */
+        }
+
+        .nav-links a {
+            color: white;          /* White text color */
+            text-decoration: none; /* Remove underline from links */
+            font-size: 18px;       /* Increase the font size */
+            display: flex;         /* Flexbox for aligning icon and text */
+            align-items: center;   /* Center icon and text vertically */
+            justify-content: center; /* Center text horizontally within the link */
+            text-align: center;    /* Center text within the link */
+            height: 100%;          /* Ensure the link takes full height of its container */
+        }
+
+        /* Mobile-friendly responsiveness */
+        @media (max-width: 600px) {
+            .nav-links li {
+                display: block;     /* Stack the items vertically on small screens */
+                margin: 10px 0;     /* Add spacing between each link */
+            }
+        }
+
+    </style>
 </head>
 <body>
+<div class="start">
+<div class="profile-card">
+    <div class="image">
+        <img src="assets/images/WhatsApp%20Image%202024-09-15%20at%209.38.26%20PM.jpeg" alt="" class="profile-img">
+    </div>
 
+    <div class="text-data">
+        <span class="name">Nethmi Kaveesha</span>
+
+        <span class="name01">Frontend Developer/Backend Developer</span>
+    </div>
+<br>
+    <div class="media-buttons">
+        <a href="#" class="link">
+        <i class="fa-brands fa-facebook" style="color: #1B1464;"></i>
+        </a>
+
+        <a href="#" class="link">
+            <i class="fa-brands fa-github" style="color: black;"></i>
+        </a>
+
+        <a href="#" class="link">
+            <i class="fa-brands fa-linkedin" style="color: blue;"></i>
+        </a>
+
+        <a href="#" class="link">
+        <i class="fa-brands fa-whatsapp" style="color: #16a085;"></i>
+        </a>
+
+        <a href="#" class="link">
+        <i class="fa-brands fa-instagram" style="color:  #eb3b5a;"></i>
+        </a>
+    </div>
+
+    <a href="path-to-your-cv-file.pdf" class="button" download="Kaveesha_CV.pdf">Download CV</a>
+</div>
+</div>
+</div>
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+        <li><a href="#gallery"><i class="fas fa-image"></i> Gallery</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+</nav>
+
+<main class="aboutMe">
+    <div class="wrapper">
+        <div class="testimonial">
+            <h1>About Me</h1>
+
+        </div>
+    </div>
+</main>
 </body>
 </html>
